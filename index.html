@@ -1,0 +1,60 @@
+<html>
+<head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>college dekho:signin page</title >
+    <link rel="stylesheet" href="./css/signinnew.css" />
+	<!--<script>
+	var i = 0;
+	var images=[];
+	var time=3000;
+	
+	images[0]='./images/cg1.jpg';
+	images[1]='./images/cg2.jpg';
+	images[2]='./images/cg3.png';
+	images[3]='./images/cg4.jpg';
+	function changeImg()
+	{
+	document.slide.src=images[i];
+	if(i < images.length - 1)
+	{
+	i++;
+	}
+	else{
+	i=0;
+	}
+	setTimeout("changeImg()",time);
+	}
+	window.onload=changeImg;
+	</script>
+	-->
+</head>
+<body style="background-image:url(./images/back2.jpg)" id="bd">
+<!--
+<div class="header">
+    <img name="slide" class="slide">
+</div>
+<image id="collicon" src="./images/college_icon.jpg">
+-->
+<div class="container">
+<img  id="acicon" src="./images/acc_icon.jpg">
+<h1>Sign In</h1>
+<form>
+<p class="ptext">Email</p>
+<input type="email" name="" class="input-box" placeholder="Your Email" required="required" >
+<p class="ptext">Password</p>
+<input type="password" name="" class="input-box" placeholder="Your Password" required="required">
+</br>
+<input type="radio" name="user_sel" class="input-box" value="As Admin"><label for ="as admin">As Admin</label>
+<input type="radio" name="user_sel" class="input-box" value="As User"><label for ="as user">As User</label>
+</br>
+<button type="button" type="submit" class="signin-btn" value="send">Sign In</button>
+<hr>
+<p class="or">OR</p>
+<button type="submit" class="later-btn"><a href="home.html">Sign In Later</a></button>
+</br>
+</br>
+<p class="ptext">Do not Have an account?<a href="signup.html">Sign Up</a></p>
+</div>
+</body>
+</html>

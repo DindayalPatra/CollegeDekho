@@ -1,0 +1,113 @@
+<html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>college dekho:home page</title >
+    <link rel="stylesheet" href="./css/homestyle.css" />
+	<link rel="stylesheet" href="./css/footstyle.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script>
+	var i = 0;
+	var images=[];
+	var time=3000;
+	
+	images[0]='./images/cg1.jpg';
+	images[1]='./images/cg2.jpg';
+	images[2]='./images/cg3.png';
+	images[3]='./images/cg4.jpg';
+	function changeImg()
+	{
+	document.slide.src=images[i];
+	if(i < images.length - 1)
+	{
+	i++;
+	}
+	else{
+	i=0;
+	}
+	setTimeout("changeImg()",time);
+	}
+	window.onload=changeImg;
+	</script>
+</head>
+<body style="background-image:url(./images/back4.jpg)">
+<div class="menu">
+<ul>
+<li class="active"><a href="signup.html">Home</a></li>
+<li><a href="signup.html">Find college</a></li>
+<li><a href="#">Explore Exam</a>
+	<div class="sub-menu-1">
+	<ul>
+		<li><a href="jexpo.html">Jexpo</a></li>
+		<li><a href="wbjee.html">Wbjee</a></li>
+		<li><a href="jelet.html">Jelet</a></li>
+	</ul>
+	</div>
+</li>
+<li><a href="signup.html">Top Courses</a>
+<div class="sub-menu-1">
+	<ul>
+		<li><a href="signup.html">Mechanical Engineering</a></li>
+		<li><a href="signup.html">Civil Engineering</a></li>
+		<li><a href="signup.html">C.S.E</a></li>
+		<li><a href="signup.html">I.T.</a></li>
+		<li><a href="signup.html">Automobile Engineering</a></li>
+		<li><a href="signup.html">Electrical Engineering</a></li>
+	</ul>
+</div>
+</li>
+<li><a href="signin.html">Seat Allotment Predictor</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="conus.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="header">
+    <img name="slide" class="slide">
+</div>
+<image id="collicon" src="./images/college_icon.jpg">
+<footer class="footer">
+	<div class="fot-container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Company</h4>
+				<ul>
+					<li><a hef="#">about us</a></li>
+					<li><a hef="#">our services</a></li>
+					<li><a hef="#">privacy policy</a></li>
+					<li><a hef="#">affiliate program</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Get Help</h4>
+				<ul>
+					<li><a hef="#">FAQ</a></li>
+					<li><a hef="#">shipping</a></li>
+					<li><a hef="#">returns</a></li>
+					<li><a hef="#">order status</a></li>
+					<li><a hef="#">payment options</a></li>
+				</ul>
+			</div>
+	<div class="footer-col">
+    <h4>Online apply</h4>
+	<ul>
+		<li><a hef="#">admission</a></li>
+		<li><a hef="#">exam</a></li>
+		<li><a hef="#">colleges</a></li>
+		<li><a hef="#">scholorship</a></li>
+	 </ul>
+	</div>
+	<div class="footer-col">
+    <h4>follow us</h4>
+	<div class="social-links">
+		<a hef="#"><i class="fab fa-facebook-f"></i></a>
+		<a hef="#"><i class="fab fa-twitter"></i></a>
+		<a hef="#"><i class="fab fa-instagram"></i></a>
+		<a hef="#"><i class="fab fa-linkedin-in"></i></a>
+	</div>
+   </div>
+</div>
+</div>
+</footer>
+</body>
+</html>
